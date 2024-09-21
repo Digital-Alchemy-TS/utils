@@ -1,0 +1,37 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions: []
+dictionaries: []
+words:
+  - cobertura
+  - codeowners
+  - endregion
+  - entites
+  - hass
+  - hassio
+  - homeassistant
+  - homekit
+  - hvac
+  - macaddress
+  - gbit
+  - cbar
+  - mbar
+  - quickboot
+  - websockets
+  - rgbw
+  - rgbww
+  - rrule
+  - rtsp
+  - sonarjs
+  - falsey
+  - mbit
+  - datetime
+  - kbit
+  - ssdp
+  - systype
+  - tvshow
+  - zeroconf
+  - templow
+  - partlycloudy
+ignoreWords: []
+import: []

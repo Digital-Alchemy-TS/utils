@@ -1,0 +1,134 @@
+{
+  "type": "module",
+  "name": "@digital-alchemy/utils",
+  "repository": "https://github.com/Digital-Alchemy-TS/utils",
+  "homepage": "https://docs.digital-alchemy.app",
+  "version": "24.9.1",
+  "description": "Typescript APIs for Home Assistant. Includes rest & websocket bindings",
+  "scripts": {
+    "build": "rm -rf dist/; tsc",
+    "lint": "eslint src",
+    "test": "./scripts/test.sh",
+    "prepublishOnly": "yarn build",
+    "upgrade": "yarn up '@digital-alchemy/*'"
+  },
+  "bugs": {
+    "email": "bugs@digital-alchemy.app",
+    "url": "https://github.com/Digital-Alchemy-TS/utils/issues/new/choose"
+  },
+  "keywords": [
+    "cache",
+    "utils",
+    "digital-alchemy"
+  ],
+  "funding": [
+    {
+      "url": "https://github.com/sponsors/zoe-codez",
+      "type": "GitHub"
+    }
+  ],
+  "author": {
+    "url": "https://github.com/zoe-codez",
+    "name": "Zoe Codez"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@digital-alchemy/core": "*",
+    "node-cache": "^5",
+    "redis": "^4"
+  },
+  "devDependencies": {
+    "@cspell/eslint-plugin": "^8.14.4",
+    "@digital-alchemy/core": "^24.8.4",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.11.0",
+    "@faker-js/faker": "^9.0.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/ini": "^4.1.1",
+    "@types/jest": "^29.5.13",
+    "@types/js-yaml": "^4.0.9",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.5.5",
+    "@types/node-cron": "^3.0.11",
+    "@types/semver": "^7.5.8",
+    "@types/sinonjs__fake-timers": "^8.1.5",
+    "@typescript-eslint/eslint-plugin": "8.6.0",
+    "@typescript-eslint/parser": "8.6.0",
+    "chalk": "^5.3.0",
+    "dayjs": "^1.11.13",
+    "eslint": "9.11.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-no-unsanitized": "^4.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^2.0.2",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "globals": "^15.9.0",
+    "ini": "^5.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "node-cache": "^5.1.2",
+    "prettier": "^3.3.3",
+    "redis": "^4.7.0",
+    "ts-jest": "^29.2.5",
+    "tslib": "^2.7.0",
+    "tsx": "^4.19.1",
+    "type-fest": "^4.26.1",
+    "typescript": "^5.6.2"
+  },
+  "jest": {
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/testing/"
+    ],
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "testMatch": [
+      "**/?(*.)+(spec|test).ts"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest_setup.ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": [
+        "ts-jest",
+        {
+          "tsconfig": "tsconfig.spec.json",
+          "useESM": true
+        }
+      ]
+    }
+  },
+  "resolutions": {
+    "@digital-alchemy/core": "portal:/home/zoe/DigitalAlchemyTS/core"
+  },
+  "packageManager": "yarn@4.5.0"
+}
